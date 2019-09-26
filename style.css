@@ -103,7 +103,6 @@ body {
 
 .grey{
   background: #f2f2f2; 
-  /* margin-top: 100px;  */
 }
 
 /* back to the top button */
@@ -157,7 +156,6 @@ footer {
   ul.social-network {
     list-style: none;
     display: inline;
-    /* margin-left: 0 !important; */
     padding: 0;
   }
   
@@ -333,13 +331,21 @@ footer {
   }
  
   @media only screen and (max-width: 720px){
+
     .social-circle li a {
-      top: -5px;
-      left: 120px;
-    }
-    #google_translate_element{
+      display: inline-block;
       position: relative;
-      right: 120px;
-      bottom: 20px;
+      margin: 0 auto 0 auto;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 15px;
+      top: -5px;
+      left: 60px;
+    }
+    
+    #google_translate_element{
+      display: none;
     }
   }
