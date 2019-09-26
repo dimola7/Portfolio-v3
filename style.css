@@ -332,13 +332,28 @@ footer {
  
   @media only screen and (max-width: 720px){
 
+    .name {
+      border: 1px solid #626972;
+      border-top: transparent;
+      border-left: transparent;
+      border-bottom: transparent;
+      height: 100%;
+      padding-right: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .name p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #040122;
+      line-height: 1.5;
+      letter-spacing: 4px;
+    }
     .social-circle li a {
       display: inline-block;
       position: relative;
       margin: 0 auto 0 auto;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
       text-align: center;
       font-size: 15px;
       top: -5px;
