@@ -86,6 +86,7 @@ body {
 /*Nav*/
 .logo{
     font-family: 'Kaushan Script', cursive;
+    cursor: default;
 }
 
 .border{
@@ -103,6 +104,24 @@ body {
 
 .grey{
   background: #f2f2f2; 
+}
+
+/* about  */
+.wrapper2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.about-big p{
+  font-size: 35px;
+}
+.about-small p{
+  position: relative;
+  top: 12px;
+}
+.about-icon img{
+  position: relative;
+  left: 70%;
 }
 
 /* back to the top button */
@@ -148,7 +167,6 @@ body {
 footer {
     background:  #2f3640;
     color: white;
-    margin-top:100px;
   }
   
   /* footer social icons */
@@ -257,24 +275,7 @@ footer {
     width: 100%;
   }
   
-  .container-fostrap {
-    display: table-cell;
-    padding: 1em;
-    text-align: center;
-    vertical-align: middle;
-  }
-  .fostrap-logo {
-    width: 100px;
-    margin-bottom:15px
-  }
-  h1.heading {
-    color: #fff;
-    font-size: 1.15em;
-    font-weight: 900;
-    margin: 0 0 0.5em;
-    color: #505050;
-  }
-  @media (min-width: 450px) {
+   @media (min-width: 450px) {
     h1.heading {
       font-size: 3.55em;
     }
@@ -381,6 +382,14 @@ footer {
       font-weight: 400;
       position: absolute;
       opacity: 0;
+    }
+    .wrapper2{
+      grid-template-columns: 1fr;
+    }
+    .about-icon img{
+      height: 50px;
+      width: 50px;
+      left: 13%;
     }
     .social-circle li a {
       display: inline-block;

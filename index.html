@@ -1,74 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon/favicon.ico" />
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <title>Adedimola</title>
 </head>
+
 <body>
+
+    <!-- navbar  -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-dark p-4 shadow">
         <div class="container">
-        <a class="navbar-brand text-warning logo" href="#">Adedimola</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#contact" id="contact">Contact</a>
-            </li>
-          </ul>
+            <a class="navbar-brand text-warning logo">Adedimola</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact" id="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
-      </nav>
-      
-      <a id="button"></a>
+    </nav>
 
-      <!-- header -->
-        <div class="container">
-            <div class="row header">
+    <a id="button"></a>
+
+    <!-- header -->
+    <div class="container pb-5">
+        <div class="row header">
             <div class="col-sm-6 name">
-                <p>HI,<br/>I AM <br/>ADEDIMOLA</p>
+                <p>HI,<br />I AM <br />ADEDIMOLA</p>
             </div>
             <div class="col-sm-6 description">
                 <div class="oneLiner">I build</div>
                 <div class="words"><span>websites</span><span>interfaces</span><span>webapps</span></div>
             </div>
+        </div>
+    </div>
+
+    <!-- about  -->
+    <section class="about grey pb-5">
+        <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">About</h2>
+        <div class="border"></div>
+        <div class="wrapper2 container">
+            <div class="about-big">
+                <p class="font-weight-bold text-right">Hi, I'm a front-end web developer based in Lagos, Nigeria. Please take a look around.</p>
+            </div>
+            <div class="about-small">
+                <p>I am passionate about learning about softwares and building excellent websites and web applications.
+                    I specialize in building responsive websites anb applications.
+                    The icons below are some of my skills</p>
+            </div>
+            <div class="about-icon">
+                <img 
+                    src="./assets/svg/javascript.svg" 
+                    alt="javascript"
+                    height="87px"
+                    width="100px"
+                />
+                <img 
+                src="./assets/svg/react.svg" 
+                alt="react"
+                height="87px"
+                width="100px"
+            />
+            <img 
+                src="./assets/svg/vue.svg" 
+                alt="vue"
+                height="87px"
+                width="100px"
+            />
+            <img 
+                src="./assets/svg/laravel.svg" 
+                alt="laravel"
+                height="87px"
+                width="100px"
+            />
             </div>
         </div>
+    </section>
 
-      <!-- Portfolio -->     
-          <section class="grey">     
-            <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">Portfolio</h2>
-            <div class="border"></div>  
-            <div class="wrapper">     
-            <div class="container-fostrap">                
+    <!-- Portfolio -->
+    <section class="">
+        <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">Portfolio</h2>
+        <div class="border"></div>
+        <div class="wrapper">
+            <div class="container-fostrap">
                 <div class="content">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="card">
                                     <a class="img-card" href="https://delishfoods.netlify.com">
-                                    <img src="./assets/portfolio/delicious.png" />
-                                  </a>
+                                        <img src="./assets/portfolio/delicious.png" />
+                                    </a>
                                     <div class="card-content text-center">
                                         <h4 class="card-title ">
                                             Delish Foods
@@ -80,8 +127,8 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="card">
                                     <a class="img-card" href="https://codepen.io/dimola/pen/BaBLGBQ?editors=1010">
-                                    <img src="./assets/portfolio/bmic.png" />
-                                  </a>
+                                        <img src="./assets/portfolio/bmic.png" />
+                                    </a>
                                     <div class="card-content text-center">
                                         <h4 class="card-title">
                                             BMI calculator
@@ -93,8 +140,8 @@
                             <div class="col-xs-12 col-sm-4">
                                 <div class="card">
                                     <a class="img-card" href="https://dimola7.github.io/VueJS-calculator/">
-                                    <img src="./assets/portfolio/calc.png" />
-                                  </a>
+                                        <img src="./assets/portfolio/calc.png" />
+                                    </a>
                                     <div class="card-content text-center">
                                         <h4 class="card-title">
                                             Calculator App
@@ -104,144 +151,149 @@
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
-                              <div class="card">
-                                  <a class="img-card" href="https://dimola7.github.io/api/">
-                                  <img src="./assets/portfolio/gif-finder.png" />
-                                </a>
-                                  <div class="card-content text-center">
-                                      <h4 class="card-title">
-                                          Gif Finder
-                                      </h4>
-                                      <p>A site to search for gifs, built with html, css and javascript</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-xs-12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card" href="https://dimola7.github.io/MyBookmarker/">
-                                <img src="./assets/portfolio/boom.png" />
-                              </a>
-                                <div class="card-content text-center">
-                                    <h4 class="card-title">
-                                        myBookmarker
-                                    </h4>
-                                    <p>A bookmarker app built with bootstrap and javascript</p>
+                                <div class="card">
+                                    <a class="img-card" href="https://dimola7.github.io/api/">
+                                        <img src="./assets/portfolio/gif-finder.png" />
+                                    </a>
+                                    <div class="card-content text-center">
+                                        <h4 class="card-title">
+                                            Gif Finder
+                                        </h4>
+                                        <p>A site to search for gifs, built with html, css and javascript</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card">
+                                    <a class="img-card" href="https://dimola7.github.io/MyBookmarker/">
+                                        <img src="./assets/portfolio/boom.png" />
+                                    </a>
+                                    <div class="card-content text-center">
+                                        <h4 class="card-title">
+                                            myBookmarker
+                                        </h4>
+                                        <p>A bookmarker app built with bootstrap and javascript</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card">
+                                    <a class="img-card" href="https://ourweathersite.netlify.com/">
+                                        <img src="./assets/portfolio/weather site.png" />
+                                    </a>
+                                    <div class="card-content text-center">
+                                        <h4 class="card-title">
+                                            Weather-site
+                                        </h4>
+                                        <p>A site that gets the weather at your current location</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4">
-                          <div class="card">
-                              <a class="img-card" href="https://ourweathersite.netlify.com/">
-                              <img src="./assets/portfolio/weather site.png" />
-                            </a>
-                              <div class="card-content text-center">
-                                  <h4 class="card-title">
-                                      Weather-site
-                                  </h4>
-                                  <p>A site that gets the weather at your current location</p>
-                              </div>
-                          </div>
-                      </div>
-                        </div>
                     </div>
                 </div>
             </div>
-          </div>
-        </section>
-        
-      <!--Section: Contact v.2-->
-    <section class="mb-4 container" id="contact">
+        </div>
+    </section>
 
+    <!--Section: Contact v.2-->
+    <section class="grey pb-5">
+        <div id="contact" class="container mb-4">
         <!--Section heading-->
         <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">Contact Me</h2>
         <div class="border"></div>
-    
-            <!--Grid column-->
-            <div class="mb-md-0 mb-5">
-                <form >   
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Your name</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Your email</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                    </div>
-                    <!--Grid row-->
-    
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Subject</label>
-                            </div>
+
+        <!--Grid column-->
+        <div class="mb-md-0 mb-5">
+            <form>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
                         </div>
                     </div>
-                    <!--Grid row-->
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-12">
-    
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
-                            </div>
-    
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
                         </div>
                     </div>
-                    <!--Grid row-->
-    
-                </form>
-    
-                <div class="text-center text-md-left text-white">
-                    <a class="btn btn-dark">Send</a>
+                    <!--Grid column-->
+
                 </div>
-                <div class="status"></div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="4"
+                                class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left text-white">
+                <a class="btn btn-dark">Send</a>
             </div>
-            <!--Grid column-->
-
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+        </div>
     </section>
-
-
-    
     <!-- contact -->
+
+    <!-- footer  -->
 
     <footer class="p-4" role="contentinfo">
         <div class="container">
-                <ul class="social-network social-circle">
-                    <li><a href="https://twitter.com/dimola_" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="https://codepen.io/dimola" class="icoCodepen" title="codepen"><i class="fa fa-codepen"></i></a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/dimola-o-4671b2a6/" class="icoLinkedin" title="Linkedin"><i
-                                class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/dimola7" class="icoGithub" title="Github"><i class="fa fa-github"></i></a>
-                    </li>
-                </ul>
-                <p class="text-center"> Adedimola Ogidan <span class="year" id="copyright">&copy;</span></p>
+            <ul class="social-network social-circle">
+                <li><a href="https://twitter.com/dimola_" class="icoTwitter" title="Twitter"><i
+                            class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://codepen.io/dimola" class="icoCodepen" title="codepen"><i
+                            class="fa fa-codepen"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/dimola-o-4671b2a6/" class="icoLinkedin" title="Linkedin"><i
+                            class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/dimola7" class="icoGithub" title="Github"><i
+                            class="fa fa-github"></i></a>
+                </li>
+            </ul>
+            <p class="text-center"> Adedimola Ogidan <span class="year" id="copyright">&copy;</span></p>
             <div id="google_translate_element"></div>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+
 </html>
