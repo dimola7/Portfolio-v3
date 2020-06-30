@@ -32,7 +32,7 @@
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light p-4 shadow">
       <div class="container">
-        <a class="navbar-brand text-warning logo">Adedimola</a>
+        <a class="navbar-brand logo" style="color: #ffab00;">Adedimola</a>
         <button
           class="navbar-toggler bg-secondary border-0"
           type="button"
@@ -142,9 +142,11 @@
       </div>
     </section>
 
-    <!-- portfolio 2.0 -->
+    <!-- Portfolio -->
+    <div id="portfolio"></div>
     <div class="container work pb-5" id="work">
-      <h1 class="porfolio-header">Portfolio</h1>
+      <h2 class="white font-weight-bold text-center my-4 pt-5">Portfolio</h2>
+      <div class="border"></div>
       <div class="work-category">
         <button
           id="website"
@@ -160,139 +162,65 @@
         <button id="vue" onclick="showRequiredCategory(this)">Vue</button>
       </div>
       <div class="category-website showCategory">
-        <a href=""><img src="img/ngo.PNG" alt="" /></a>
-        <a href=""><img src="img/recipe.PNG" alt="" /></a>
+        <a href="https://myngo.netlify.com/">
+          <img src="img/ngo.PNG" alt="" />
+          <p class="desc">NGO website built with html and css</p>
+        </a>
+        <a href="https://dimola7.github.io/Recipe-app-javaScript/">
+          <img src="img/recipe.PNG" alt="" />
+          <p class="desc">
+            Recipe website built with javascript, using the forkify API
+          </p>
+        </a>
       </div>
       <div class="category-javascript hideCategory">
-        <a href=""><img src="img/recipe.PNG" alt="" /></a>
-        <a href=""><img src="img/wea.PNG" alt="" /></a>
-        <a href=""><img src="img/todo.PNG" alt="" /></a>
-        <a href=""><img src="img/gif-finder.png" alt="" /></a>
-        <a href=""><img src="img/jscalc.PNG" alt="" /></a>
+        <a href="https://dimola7.github.io/Recipe-app-javaScript/">
+          <img src="img/recipe.PNG" alt="" />
+          <p class="desc">
+            Recipe website built with javascript, using the Forkify API
+          </p>
+        </a>
+        <a href="https://theglobalweather.netlify.app/">
+          <img src="img/wea.PNG" alt="" />
+          <p class="desc">
+            Weather app built with javascript, using the Accuweather API
+          </p>
+        </a>
+        <a href="https://dimola7.github.io/Todos-with-javaScript/">
+          <img src="img/todo.PNG" alt="" />
+          <p class="desc">
+            Todo list app built with bootstrap and javascript
+          </p>
+        </a>
+        <a href="https://dimola7.github.io/api/">
+          <img src="img/gif-finder.png" alt="" />
+          <p class="desc">
+            Gif finder built with javascript, using the Giphy API
+          </p>
+        </a>
+        <a href="https://dimola7.github.io/js-calculator/">
+          <img src="img/jscalc.PNG" alt="" />
+          <p class="desc">Calculator built with Javascript</p>
+        </a>
       </div>
       <div class="category-react hideCategory">
-        <a href=""><img src="img/delicious.png" alt="" /></a>
+        <a href="https://delishfoods.netlify.com">
+          <img src="img/delicious.png" alt="" />
+          <p class="desc">A food ordering web-app built with ReactJS</p>
+        </a>
       </div>
       <div class="category-vue hideCategory">
-        <a href=""><img src="img/bmic.png" alt="" /></a>
-        <a href=""><img src="img/calc.png" alt="" /></a>
+        <a href="https://dimola7.github.io/BMI-calculator/">
+          <img src="img/bmic.png" alt="" />
+          <p class="desc">A BMI calculator built with VueJS</p></a
+        >
+
+        <a href="https://dimola7.github.io/VueJS-calculator/">
+          <img src="img/calc.png" alt="" />
+          <p class="desc">Calculator app built with VueJS</p>
+        </a>
       </div>
     </div>
-
-    <!-- Portfolio -->
-    <div id="portfolio"></div>
-    <section>
-      <h2 class="white font-weight-bold text-center my-4 pt-5">
-        Portfolio
-      </h2>
-      <div class="border"></div>
-      <div class="wrapper">
-        <div class="container-fostrap">
-          <div class="content">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                  <div class="card">
-                    <a class="img-card" href="https://delishfoods.netlify.com">
-                      <img src="./assets/portfolio/delicious.png" />
-                    </a>
-                    <div class="card-content text-center">
-                      <h4 class="card-title">
-                        Delish Foods
-                      </h4>
-                      <p>A food ordering web-app built with ReactJS</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <div class="card">
-                    <a
-                      class="img-card"
-                      href="https://dimola7.github.io/BMI-calculator/"
-                    >
-                      <img src="./assets/portfolio/bmic.png" />
-                    </a>
-                    <div class="card-content text-center">
-                      <h4 class="card-title">
-                        BMI calculator
-                      </h4>
-                      <p>A BMI calculator built with VueJS</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <div class="card">
-                    <a
-                      class="img-card"
-                      href="https://dimola7.github.io/VueJS-calculator/"
-                    >
-                      <img src="./assets/portfolio/calc.png" />
-                    </a>
-                    <div class="card-content text-center">
-                      <h4 class="card-title">
-                        Calculator App
-                      </h4>
-                      <p>A calculator app built with VueJS</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <div class="card">
-                    <a class="img-card" href="https://dimola7.github.io/api/">
-                      <img src="./assets/portfolio/gif-finder.png" />
-                    </a>
-                    <div class="card-content text-center">
-                      <h4 class="card-title">
-                        Gif Finder
-                      </h4>
-                      <p>
-                        A site to search for gifs, built with html, css and
-                        javascript
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <div class="card">
-                    <a class="img-card" href="https://myngo.netlify.com/">
-                      <img src="./assets/portfolio/ngo.PNG" />
-                    </a>
-                    <div class="card-content text-center">
-                      <h4 class="card-title">
-                        NGO website
-                      </h4>
-                      <p>
-                        The UI for an NGO, built and designed from scratch,
-                        using HTML, CSS and JavaScript.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                  <div class="card">
-                    <a
-                      class="img-card"
-                      href="https://theglobalweather.netlify.app/"
-                    >
-                      <img src="./assets/portfolio/global.PNG" />
-                    </a>
-                    <div class="card-content text-center">
-                      <h4 class="card-title">
-                        Weather App
-                      </h4>
-                      <p>
-                        A javaScript app to get the weather information of any
-                        city in the world, using the Accuweather API.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--Section: Contact v.2-->
     <div id="contact"></div>
@@ -384,9 +312,10 @@
     </section>
     <!-- contact -->
 
+    <hr />
     <!-- footer  -->
 
-    <footer class="p-4" role="contentinfo">
+    <footer class="p-3" role="contentinfo">
       <div class="container">
         <ul class="social-network social-circle">
           <li>

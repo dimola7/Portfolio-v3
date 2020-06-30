@@ -191,9 +191,14 @@ div[class^="category-"] {
   justify-self: center;
   position: relative;
   display: inline-block;
+  text-decoration: none;
 }
 .work-category .active {
   background-color: #ffab00;
+}
+.desc {
+  text-align: center;
+  color: #fff;
 }
 button.active {
   color: #fff;
@@ -208,14 +213,13 @@ div.hideCategory {
 .showCategory {
   display: block;
 }
-.porfolio-header {
-  color: #fff;
-}
 
 /*FOOTER*/
-
+hr {
+  border: 2px solid #707070;
+}
 footer {
-  background: #2f3640;
+  background: #252627;
   color: white;
 }
 
