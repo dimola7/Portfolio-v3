@@ -24,6 +24,7 @@ body {
   color: #fff;
   font-size: 3rem;
   cursor: context-menu;
+  font-weight: bold;
 }
 span:hover {
   color: #48cfad;
