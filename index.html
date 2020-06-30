@@ -28,11 +28,9 @@
     <title>Adedimola</title>
   </head>
 
-  <body>
+  <body style="background-color: #252627;">
     <!-- navbar  -->
-    <nav
-      class="navbar navbar-expand-lg fixed-top navbar-light bg-dark p-4 shadow"
-    >
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light p-4 shadow">
       <div class="container">
         <a class="navbar-brand text-warning logo">Adedimola</a>
         <button
@@ -87,19 +85,19 @@
 
     <!-- about  -->
     <div id="about"></div>
-    <section class="about grey pb-5">
-      <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">
+    <section class="about pb-5">
+      <h2 class="white font-weight-bold text-center my-4 pt-5">
         About
       </h2>
       <div class="border"></div>
       <div class="wrapper2 container">
-        <div class="about-big">
+        <div class="about-big white">
           <p class="font-weight-bold">
             Hi, I'm a front-end web developer based in Lagos, Nigeria. Please
             take a look around.
           </p>
         </div>
-        <div class="about-small">
+        <div class="about-small white">
           <p>
             I am passionate about learning about softwares and building
             excellent responsive websites and web applications. The icons below
@@ -144,10 +142,47 @@
       </div>
     </section>
 
+    <!-- portfolio 2.0 -->
+    <div class="container work pb-5" id="work">
+      <h1 class="porfolio-header">Portfolio</h1>
+      <div class="work-category">
+        <button
+          id="website"
+          class="active"
+          onclick="showRequiredCategory(this)"
+        >
+          Websites
+        </button>
+        <button id="javascript" onclick="showRequiredCategory(this)">
+          Javascript
+        </button>
+        <button id="react" onclick="showRequiredCategory(this)">React</button>
+        <button id="vue" onclick="showRequiredCategory(this)">Vue</button>
+      </div>
+      <div class="category-website showCategory">
+        <a href=""><img src="img/ngo.PNG" alt="" /></a>
+        <a href=""><img src="img/recipe.PNG" alt="" /></a>
+      </div>
+      <div class="category-javascript hideCategory">
+        <a href=""><img src="img/recipe.PNG" alt="" /></a>
+        <a href=""><img src="img/wea.PNG" alt="" /></a>
+        <a href=""><img src="img/todo.PNG" alt="" /></a>
+        <a href=""><img src="img/gif-finder.png" alt="" /></a>
+        <a href=""><img src="img/jscalc.PNG" alt="" /></a>
+      </div>
+      <div class="category-react hideCategory">
+        <a href=""><img src="img/delicious.png" alt="" /></a>
+      </div>
+      <div class="category-vue hideCategory">
+        <a href=""><img src="img/bmic.png" alt="" /></a>
+        <a href=""><img src="img/calc.png" alt="" /></a>
+      </div>
+    </div>
+
     <!-- Portfolio -->
     <div id="portfolio"></div>
     <section>
-      <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">
+      <h2 class="white font-weight-bold text-center my-4 pt-5">
         Portfolio
       </h2>
       <div class="border"></div>
@@ -261,10 +296,10 @@
 
     <!--Section: Contact v.2-->
     <div id="contact"></div>
-    <section class="grey pb-5">
+    <section class="pb-5">
       <div id="contact" class="container mb-4">
         <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-4 pt-5">
+        <h2 class="white font-weight-bold text-center my-4 pt-5">
           Contact Me
         </h2>
         <div class="border"></div>
@@ -286,7 +321,7 @@
                     name="name"
                     class="form-control"
                   />
-                  <label for="name" class="">Your name</label>
+                  <label for="name" class="white">Your name</label>
                 </div>
               </div>
               <!--Grid column-->
@@ -300,7 +335,7 @@
                     name="_replyto"
                     class="form-control"
                   />
-                  <label for="email" class="">Your email</label>
+                  <label for="email" class="white">Your email</label>
                 </div>
               </div>
               <!--Grid column-->
@@ -317,7 +352,7 @@
                     name="subject"
                     class="form-control"
                   />
-                  <label for="subject" class="">Subject</label>
+                  <label for="subject" class="white">Subject</label>
                 </div>
               </div>
             </div>
@@ -335,7 +370,7 @@
                     rows="4"
                     class="form-control md-textarea"
                   ></textarea>
-                  <label for="message">Your message</label>
+                  <label for="message" class="white">Your message</label>
                 </div>
               </div>
             </div>
@@ -390,14 +425,14 @@
         <p class="text-center">
           Adedimola Ogidan <span class="year" id="copyright">&copy;</span>
         </p>
-        <div id="google_translate_element"></div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
