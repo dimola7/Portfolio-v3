@@ -170,7 +170,6 @@ nav {
 
 /* Portfolio */
 .work-category button {
-  text-transform: capitalize;
   border: 3px solid #ffab00;
   padding: 15px 30px;
   border-radius: 50px;
@@ -187,7 +186,6 @@ div[class^="category-"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 20px;
-  justify-self: center;
 }
 .work a {
   justify-self: center;
@@ -377,7 +375,10 @@ ul.social-network li {
     left: 60px;
   }
   .work a {
-    left: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .work a img {
     width: 300px;
@@ -397,3 +398,11 @@ ul.social-network li {
     color: #fff;
   }
 }
+
+/* .contain{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
+} */
