@@ -1,23 +1,33 @@
-document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
-let t1 = new TimelineLite();
-let btn = $('#button');
+const spans = document.querySelectorAll("h1 span");
+spans.forEach((span) =>
+  span.addEventListener("mouseover", (e) => {
+    span.classList.add("animated", "rubberBand");
+  })
+);
+spans.forEach((span) =>
+  span.addEventListener("mouseout", (e) => {
+    span.classList.remove("animated", "rubberBand");
+  })
+);
 
-$(window).scroll(function() {
+document
+  .getElementById("copyright")
+  .appendChild(document.createTextNode(new Date().getFullYear()));
+let t1 = new TimelineLite();
+let btn = $("#button");
+
+$(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
+    btn.addClass("show");
   } else {
-    btn.removeClass('show');
+    btn.removeClass("show");
   }
 });
 
-btn.on('click', function(e) {
+btn.on("click", function (e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300'); 
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
-
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-};
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
@@ -49,5 +59,3 @@ const showRequiredCategory = (event) => {
   getCategory.classList.remove("hideCategory");
   getCategory.classList.add("showCategory");
 };
-
-
