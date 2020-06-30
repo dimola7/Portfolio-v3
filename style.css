@@ -376,6 +376,9 @@ ul.social-network li {
     top: -5px;
     left: 60px;
   }
+  .work a {
+    left: 6%;
+  }
   .work a img {
     width: 300px;
   }
@@ -383,16 +386,9 @@ ul.social-network li {
     width: 300px;
   }
   .work-category button {
-    text-transform: capitalize;
     border: 1px solid #ffab00;
     padding: 2px 12px;
-    border-radius: 50px;
-    color: #ffab00;
     font-size: 0.9rem;
-    letter-spacing: 1px;
-    background-color: #252627;
-    outline: none;
-    cursor: pointer;
   }
   div[class^="category-"] {
     justify-self: center;
