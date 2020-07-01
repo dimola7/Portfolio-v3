@@ -182,7 +182,14 @@ span.m-left {
   visibility: visible;
 }
 
-/* Portfolio */
+/* Projects */
+.project-header {
+  font-size: 10rem;
+  z-index: 0;
+  color: #fff;
+  opacity: 0.1;
+  text-align: right;
+}
 .work-category button {
   border: 3px solid #ffab00;
   padding: 15px 30px;
@@ -223,6 +230,18 @@ div.hideCategory {
 }
 .showCategory {
   display: block;
+}
+
+/* Contact */
+.contact-header {
+  font-size: 10rem;
+  z-index: 0;
+  color: #fff;
+  opacity: 0.1;
+}
+.button {
+  background-color: #ffab00;
+  color: #fff;
 }
 
 /*FOOTER*/
@@ -327,30 +346,24 @@ ul.social-network li {
   color: #ffab00;
 }
 
-@media (min-width: 450px) {
-  h1.heading {
-    font-size: 3.55em;
-  }
-}
-@media (min-width: 760px) {
-  h1.heading {
-    font-size: 3.05em;
-  }
-}
-@media (min-width: 900px) {
-  h1.heading {
-    font-size: 3.25em;
-    margin: 0 0 0.3em;
-  }
-}
-
 @media only screen and (max-width: 720px) {
-  .description {
-    display: none;
-  }
   /* header */
   .main-info-section {
     margin-bottom: -70px;
+  }
+  .text h1 {
+    font-size: 1.8rem;
+    word-spacing: 5px;
+  }
+  .text .contact-btn {
+    padding: 9px 20px;
+    border: 1px solid #ffab00;
+    font-size: 0.6rem;
+  }
+  .text .cv {
+    padding: 9px 20px;
+    border: 1px solid #ffab00;
+    font-size: 0.6rem;
   }
   /* about */
   .about-header {
@@ -373,14 +386,9 @@ ul.social-network li {
     width: 50px;
     left: 10%;
   }
-  .social-circle li a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto 0 auto;
-    text-align: center;
-    font-size: 15px;
-    top: -5px;
-    left: 80px;
+  /* projects */
+  .project-header {
+    font-size: 6rem;
   }
   .work a {
     padding-left: 5%;
@@ -405,19 +413,16 @@ ul.social-network li {
   button.active {
     color: #fff;
   }
-  .text h1 {
-    font-size: 1.8rem;
-    word-spacing: 5px;
-  }
-  .text .contact-btn {
-    padding: 9px 20px;
-    border: 1px solid #ffab00;
-    font-size: 0.6rem;
-  }
-  .text .cv {
-    padding: 9px 20px;
-    border: 1px solid #ffab00;
-    font-size: 0.6rem;
+
+  /* footer */
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 15px;
+    top: -5px;
+    left: 80px;
   }
 }
 
