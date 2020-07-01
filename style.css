@@ -414,6 +414,10 @@ ul.social-network li {
     color: #fff;
   }
 
+  /* contact */
+  .contact-header {
+    font-size: 6rem;
+  }
   /* footer */
   .social-circle li a {
     display: inline-block;
