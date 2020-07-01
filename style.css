@@ -8,6 +8,22 @@ body {
   background-color: #252627;
 }
 
+/*Nav*/
+nav {
+  background-color: #181818;
+}
+.logo {
+  font-family: "Kaushan Script", cursive;
+  cursor: default;
+}
+
+.border {
+  width: 160px;
+  height: 3px;
+  background: #000;
+  margin: 40px auto;
+}
+
 /* header */
 .main-info-section {
   color: #fff;
@@ -98,44 +114,32 @@ span.m-left {
   padding-left: 100px;
 }
 
-/*Nav*/
-nav {
-  background-color: #181818;
-}
-.logo {
-  font-family: "Kaushan Script", cursive;
-  cursor: default;
-}
-
-.border {
-  width: 160px;
-  height: 3px;
-  background: #000;
-  margin: 40px auto;
-}
-/* header */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/* about  */
-.wrapper2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-}
-.about-big p {
-  font-size: 35px;
-  text-align: right;
-}
-.about-small p {
+.about {
+  max-width: 1000px;
+  background-color: #252627;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+  padding: 50px;
   position: relative;
-  top: 12px;
+  top: -70px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
+.about-me-info p {
+  font-size: 1.3rem;
+  color: #bebebe;
+}
+
 .about-icon img {
   position: relative;
-  left: 70%;
+  left: 25%;
+}
+.about-header {
+  font-size: 10rem;
+  z-index: 0;
+  color: #fff;
+  opacity: 0.1;
 }
 
 .white {
@@ -341,29 +345,33 @@ ul.social-network li {
 }
 
 @media only screen and (max-width: 720px) {
-  .header {
-    margin-top: 200px;
-    height: 200px;
-  }
-
   .description {
     display: none;
   }
-
-  .wrapper2 {
-    grid-template-columns: 1fr;
+  /* header */
+  .main-info-section {
+    margin-bottom: -70px;
   }
-  .about-big p {
-    text-align: center;
-    font-size: 30px;
+  /* about */
+  .about-header {
+    font-size: 6rem;
   }
-  .about-small p {
-    font-size: 20px;
+  .about {
+    max-width: 90%;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    position: relative;
+    top: -40px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
   }
   .about-icon img {
     height: 50px;
     width: 50px;
-    left: 20%;
+    left: 10%;
   }
   .social-circle li a {
     display: inline-block;
