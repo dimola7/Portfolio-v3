@@ -258,7 +258,10 @@ div.hideCategory {
 .grid p span {
   font-size: 12px;
 }
-
+.grid p span:hover {
+  color: #ffab00;
+  transition: all 0.5;
+}
 /*FOOTER*/
 hr {
   border: 2px solid #707070;
