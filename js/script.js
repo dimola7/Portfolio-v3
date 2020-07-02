@@ -1,15 +1,3 @@
-const spans = document.querySelectorAll("h1 span");
-spans.forEach((span) =>
-  span.addEventListener("mouseover", (e) => {
-    span.classList.add("animated", "rubberBand");
-  })
-);
-spans.forEach((span) =>
-  span.addEventListener("mouseout", (e) => {
-    span.classList.remove("animated", "rubberBand");
-  })
-);
-
 document
   .getElementById("copyright")
   .appendChild(document.createTextNode(new Date().getFullYear()));

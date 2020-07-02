@@ -239,9 +239,24 @@ div.hideCategory {
   color: #fff;
   opacity: 0.1;
 }
-.button {
-  background-color: #ffab00;
-  color: #fff;
+.grid {
+  color: #636e72;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid p {
+  font-size: 16px;
+}
+.grid h2 {
+  font-size: 30px;
+  cursor: default;
+}
+.grid h2:hover {
+  color: #ffab00;
+  transition: all 0.5;
+}
+.grid p span {
+  font-size: 12px;
 }
 
 /*FOOTER*/
@@ -267,11 +282,6 @@ ul.social-network li {
 }
 
 /* footer social icons */
-
-/* .social-network a.icoTwitter:hover {
-  background-color: #33ccff;
-} */
-
 .social-network a.icoCodepen:hover {
   background-color: #636e72;
 }
@@ -417,6 +427,13 @@ ul.social-network li {
   /* contact */
   .contact-header {
     font-size: 6rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .grid h2 {
+    font-size: 23px;
   }
   /* footer */
   .social-circle li a {
