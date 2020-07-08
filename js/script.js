@@ -1,7 +1,15 @@
-document
-  .getElementById("copyright")
-  .appendChild(document.createTextNode(new Date().getFullYear()));
-let t1 = new TimelineLite();
+const text = document.querySelector(".text");
+const logo = document.querySelector(".logo");
+
+const tl = new TimelineLite();
+
+tl.fromTo(logo, 1, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut }).fromTo(
+  text,
+  1,
+  { x: "-106%" },
+  { x: "0%", ease: Power2.easeInOut }
+);
+
 let btn = $("#button");
 
 $(window).scroll(function () {
@@ -22,7 +30,7 @@ const scene = new ScrollMagic.Scene({
   triggerElement: ".skills",
   triggerHook: 0,
 })
-  .setTween(t1)
+  .setTween(tl)
   .addTo(controller);
 
 const showRequiredCategory = (event) => {
@@ -47,3 +55,7 @@ const showRequiredCategory = (event) => {
   getCategory.classList.remove("hideCategory");
   getCategory.classList.add("showCategory");
 };
+
+document
+  .getElementById("copyright")
+  .appendChild(document.createTextNode(new Date().getFullYear()));
