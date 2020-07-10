@@ -3,12 +3,13 @@ const logo = document.querySelector(".logo");
 
 const tl = new TimelineLite();
 
-tl.fromTo(logo, 1, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut }).fromTo(
-  text,
-  1,
-  { x: "-106%" },
-  { x: "0%", ease: Power2.easeInOut }
-);
+tl.fromTo(logo, 1, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut })
+//   .fromTo(
+//   text,
+//   1,
+//   { x: "-130%" },
+//   { x: "0%", ease: Power2.easeInOut }
+// );
 
 let btn = $("#button");
 
