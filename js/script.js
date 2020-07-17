@@ -4,11 +4,11 @@ const logo = document.querySelector(".logo");
 // gsap for javascript animations
 gsap.from(logo, { x: -100 });
 gsap.from(".animation", { opacity: 0, duration: 1, y: -50, stagger: 0.2 });
-gsap.from(".work", {
-  scrollTrigger: ".work",
-  x: 1000,
-  duration: 1.5,
-});
+// gsap.from(".work", {
+//   scrollTrigger: ".work",
+//   x: 1000,
+//   duration: 1.5,
+// });
 
 let btn = $("#button");
 
