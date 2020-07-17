@@ -57,6 +57,9 @@ span.m-left {
   word-spacing: 10px;
   font-size: 0.8rem;
 }
+.intro span {
+  letter-spacing: 3px;
+}
 .text .contact-btn {
   padding: 12px 25px;
   background-color: none;

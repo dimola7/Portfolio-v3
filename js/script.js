@@ -1,19 +1,18 @@
-const text = document.querySelector(".text");
+const intro = document.querySelector(".intro");
 const logo = document.querySelector(".logo");
 
-const tl = new TimelineLite();
-
-tl.fromTo(logo, 1, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut })
-//   .fromTo(
-//   text,
-//   1,
-//   { x: "-130%" },
-//   { x: "0%", ease: Power2.easeInOut }
-// );
+// gsap for javascript animations
+gsap.from(logo, { x: -100 });
+gsap.from(".animation", { opacity: 0, duration: 1, y: -50, stagger: 0.2 });
+gsap.from(".work", {
+  scrollTrigger: ".work",
+  x: 1000,
+  duration: 1.5,
+});
 
 let btn = $("#button");
 
-$(window).scroll(function () {
+$(window).scroll(() => {
   if ($(window).scrollTop() > 300) {
     btn.addClass("show");
   } else {
@@ -21,10 +20,12 @@ $(window).scroll(function () {
   }
 });
 
-btn.on("click", function (e) {
+btn.on("click", (e) => {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
+
+const tl = new TimelineLite();
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
