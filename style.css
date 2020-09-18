@@ -254,6 +254,15 @@ div.hideCategory {
   font-size: 30px;
   cursor: default;
 }
+.grid h2 a{
+  text-decoration: none;
+  color: #636e72;
+}
+.grid h2 a:hover{
+  color: #ffab00;
+  transition: all 0.5;
+}
+
 .grid h2:hover {
   color: #ffab00;
   transition: all 0.5;
@@ -441,6 +450,7 @@ ul.social-network li {
   .grid h2 {
     font-size: 23px;
   }
+
   /* footer */
   .social-circle li a {
     display: inline-block;
