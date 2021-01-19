@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.grey-background{
+  background-color: #252627;
+}
+
 body {
   background-color: #252627;
 }
@@ -186,6 +190,13 @@ span.m-left {
 }
 
 /* Projects */
+.card-width{
+  width: 22rem;
+}
+.project-card{
+  background-color:  #252627;
+}
+
 .project-header {
   font-size: 10rem;
   z-index: 0;
@@ -412,6 +423,10 @@ ul.social-network li {
     left: 7%;
   }
   /* projects */
+  .card-width{
+    width: 20.5rem;
+  }
+
   .project-header {
     font-size: 6rem;
   }
@@ -462,11 +477,3 @@ ul.social-network li {
     left: 80px;
   }
 }
-
-/* .contain{
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
-  margin-left: auto;
-  margin-right: auto;
-} */

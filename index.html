@@ -141,6 +141,12 @@
       </div>
     </section>
 
+    <section class="test-modal">
+     
+
+      
+    </section>
+
     <!-- Projects -->
     <div id="projects"></div>
     <h1 class="project-header container">Projects</h1>
@@ -160,70 +166,306 @@
         <!-- <button id="vue" onclick="showRequiredCategory(this)">Vue</button> -->
       </div>
       <div class="category-website showCategory">
-        <a href="https://filmvibe.netlify.app/">
-          <img src="img/movie-info.PNG" alt="" />
-          <p class="white">
-            A web app to get information about any movie or tv show, using
-            theMovieDB API
-          </p>
-        </a>
-        <a href="https://myngo.netlify.com/">
-          <img src="img/ngo.PNG" alt="" />
-          <p class="white">NGO website built with html and css</p>
-        </a>
-        <a href="https://dimola7.github.io/Recipe-app-javaScript/">
-          <img src="img/recipe.PNG" alt="" />
-          <p class="white">
-            Recipe website built with javascript, using the forkify API
-          </p>
-        </a>
+        
+      <!-- websites -->
+      <!-- filmvibe card -->
+        <div class="card border-0 card-width" data-toggle="modal" data-target="#filmVibeModal">
+          <img class="card-img-top" src="img/movie-info.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">FilmVibe</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="filmVibeModal" tabindex="-1" role="dialog" aria-labelledby="filmVibeModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="filmVibeModalTitle">FilmVibe</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/movie-info.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A web app to get information about any movie or tv show, using
+                      theMovieDB API</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://filmvibe.netlify.app/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/movies"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      <!-- NGO card -->
+        <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#ngoModal">
+          <img class="card-img-top" src="img/ngo.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">NGO</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="ngoModal" tabindex="-1" role="dialog" aria-labelledby="ngoModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="ngoModalTitle">NGO</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/ngo.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A website for an NGO</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://myngo.netlify.com/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/ngo"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- recipe card -->
+        <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#recipeModal">
+          <img class="card-img-top" src="img/recipe.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">Recipe website</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="recipeModalTitle">Recipe website</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/recipe.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A website to built to search for recipes, using the forkify API</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://dimola7.github.io/Recipe-app-javaScript/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/Recipe-app-javaScript"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- javascript -->
       <div class="category-javascript hideCategory">
-        <a href="https://filmvibe.netlify.app/">
-          <img src="img/movie-info.PNG" alt="" />
-          <p class="white">
-            A web app to get information about any movie or tv show, using
-            theMovieDB API
-          </p>
-        </a>
-        <a href="https://dimola7.github.io/Recipe-app-javaScript/">
-          <img src="img/recipe.PNG" alt="" />
-          <p class="white">
-            Recipe website built with javascript, using the Forkify API
-          </p>
-        </a>
-        <a href="https://theglobalweather.netlify.app/">
-          <img src="img/wea.PNG" alt="" />
-          <p class="white">
-            Weather app built with javascript, using the Accuweather API
-          </p>
-        </a>
-        <a href="https://dimola7.github.io/Todos-with-javaScript/">
-          <img src="img/todo.PNG" alt="" />
-          <p class="white">Todo list app built with bootstrap and javascript</p>
-        </a>
-        <!-- <a href="https://dimola7.github.io/api/">
-          <img src="img/gif-finder.png" alt="" />
-          <p class="white">
-            Gif finder built with javascript, using the Giphy API
-          </p>
-        </a> -->
-        <a href="https://dimola7.github.io/js-calculator/">
-          <img src="img/jscalc.PNG" alt="" />
-          <p class="white">Calculator built with Javascript</p>
-        </a>
+         <!-- filmvibe card -->
+         <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#filmVibe2Modal">
+          <img class="card-img-top" src="img/movie-info.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">FilmVibe</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="filmVibe2Modal" tabindex="-1" role="dialog" aria-labelledby="filmVibe2ModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="filmVibe2ModalTitle">FilmVibe</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/movie-info.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A web app to get information about any movie or tv show, using
+                      theMovieDB API</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://filmvibe.netlify.app/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/movies"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      <!-- Global weather card -->
+        <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#globalWeatherModal">
+          <img class="card-img-top" src="img/wea.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">Global Weather</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="globalWeatherModal" tabindex="-1" role="dialog" aria-labelledby="globalWeatherModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="globalWeatherModalTitle">Global Weather</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/wea.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A weather app that shows the weather conditions for the current day and for 4 days after that. It shows the weather of any city in the world. It leverages the Accuweather API to fetch the weather data.</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://theglobalweather.netlify.app/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/Weather-App"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- recipe card -->
+        <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#recipe2Modal">
+          <img class="card-img-top" src="img/recipe.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">Recipe website</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="recipe2Modal" tabindex="-1" role="dialog" aria-labelledby="recipe2ModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="recipe2ModalTitle">Recipe website</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/recipe.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A website to built to search for recipes, using the forkify API</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://dimola7.github.io/Recipe-app-javaScript/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/Recipe-app-javaScript"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Todo list card -->
+         <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#todoListModal">
+          <img class="card-img-top" src="img/todo.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">To-do</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="todoListModal" tabindex="-1" role="dialog" aria-labelledby="todoListModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="todoListModalTitle">To-do</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/todo.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A todo list app built as a reminder, so as not to forget important tasks</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://dimola7.github.io/Todos-with-javaScript/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/Todos-with-javaScript"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- calculator card -->
+        <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#calculatorModal">
+          <img class="card-img-top" src="img/jscalc.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">Calculator</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="calculatorModal" tabindex="-1" role="dialog" aria-labelledby="calculatorModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="calculatorModalTitle">Calculator</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/jscalc.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A calculator for making basic mathematical calculations</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://dimola7.github.io/js-calculator/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/js-calculator"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="category-react hideCategory">
         <!-- <a href="https://delishfoods.netlify.com">
           <img src="img/delicious.png" alt="" />
           <p class="white">A food ordering web-app built with ReactJS</p>
         </a> -->
-        <a href="https://viewgithub.netlify.app/">
-          <img src="img/github.PNG" alt="" />
-          <p class="white">
-            A web-app for finding profiles of github users, built with ReactJS
-          </p>
-        </a>
+        <!-- github finder card -->
+        <div class="card card2 border-0 card-width" data-toggle="modal" data-target="#githubFinderModal">
+          <img class="card-img-top" src="img/github.PNG" alt="">
+          <div class="project-card">
+            <p class="card-text white text-center font-weight-bold">Github Finder</p>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="githubFinderModal" tabindex="-1" role="dialog" aria-labelledby="githubFinderModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header grey-background white">
+                  <h5 class="modal-title" id="githubFinderModalTitle">Github Finder</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img class="card-img-top" src="img/github.PNG" alt="">
+                  <div>
+                    <p class="font-weight-bold">Description:</p>
+                    <p>A web-app to find and view profiles of github users. Built using the github api</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a href="https://viewgithub.netlify.app/"><button type="button" class="btn grey-background white">View Site</button></a>
+                  <a href="https://github.com/dimola7/Github-Finder-with-React"><button type="button" class="btn grey-background white">Github</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="category-vue hideCategory">
