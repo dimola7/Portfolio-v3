@@ -253,35 +253,32 @@ div.hideCategory {
   color: #fff;
   opacity: 0.1;
 }
-.grid {
+.contact-dets {
   color: #636e72;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
-.grid p {
+.contact-dets p {
   font-size: 16px;
 }
-.grid h2 {
+.contact-dets h2 {
   font-size: 30px;
   cursor: default;
 }
-.grid h2 a{
+.contact-dets h2 a{
   text-decoration: none;
   color: #636e72;
 }
-.grid h2 a:hover{
+.contact-dets h2 a:hover{
   color: #ffab00;
   transition: all 0.5;
 }
-
-.grid h2:hover {
+.contact-dets h2:hover {
   color: #ffab00;
   transition: all 0.5;
 }
-.grid p span {
+.contact-dets p span {
   font-size: 12px;
 }
-.grid p span:hover {
+.contact-dets p span:hover {
   color: #ffab00;
   transition: all 0.5;
 }
@@ -295,7 +292,6 @@ footer {
 }
 
 /* footer social icons */
-
 ul.social-network {
   list-style: none;
   display: inline;
@@ -458,11 +454,7 @@ ul.social-network li {
   .contact-header {
     font-size: 6rem;
   }
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-  .grid h2 {
+  .contact-dets h2 {
     font-size: 23px;
   }
 
